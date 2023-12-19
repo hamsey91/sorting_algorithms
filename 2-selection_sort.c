@@ -32,8 +32,10 @@ void selection_sort(int *array, size_t size)
 	{
 		num = array + i;
 		for (j = i + 1; j < size; j++)
-			num = (array[j] < *num) ? (array + j) : num;
-
+		{
+			if (array[j] < *num)
+				num = array + j;
+		}
 		if ((array + i) != num)
 		{
 			int_swap(array + i, num);
