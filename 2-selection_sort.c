@@ -7,7 +7,7 @@
  * @y: The second integer to swap.
  */
 
-void swap_ints(int *x, int *y)
+void swap(int *x, int *y)
 {
 	int tmp;
 
