@@ -1,4 +1,4 @@
-#include"sort.h"
+#include "sort.h"
 
 /**
  * selection_sort - Function that sorts an array of integers in ascending order
@@ -32,3 +32,4 @@ void selection_sort(int *array, size_t size)
 		}
 	}
 }
+
