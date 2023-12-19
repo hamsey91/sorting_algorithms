@@ -6,7 +6,6 @@
  * @n1: pointer to the first node.
  * @n2: pointer to the second node.
  */
-
 void nodes_swap(listint_t *n1, listint_t *n2)
 {
 	if (n1->prev)
@@ -25,7 +24,6 @@ void nodes_swap(listint_t *n1, listint_t *n2)
  *
  * @list: pointer to the head of a doubly-linked list.
  */
-
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *i, *j;
@@ -34,7 +32,7 @@ void insertion_sort_list(listint_t **list)
 		return;
 
 	i = (*list)->next;
-	while (i);
+	while (i)
 	{
 		j = i;
 		i = i->prev;
