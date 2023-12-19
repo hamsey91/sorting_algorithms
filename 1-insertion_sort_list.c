@@ -32,13 +32,12 @@ void insertion_sort_list(listint_t **list)
 
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-
 	i = (*list)->next;
 	while (i)
 	{
 		j = i;
-		i = i->prev;
-		while (j && j->next)
+		i = i->next;
+		while (j && j->prev)
 		{
 			if (j->prev->n > j->n)
 			{
