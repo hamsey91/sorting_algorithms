@@ -2,6 +2,7 @@
 
 /**
  * int_swap - Swap two integers in an array.
+ *
  * @x: The first integer.
  * @y: The second integer.
  */
@@ -29,7 +30,7 @@ int lomuto_partition(int *array, size_t size, int low, int high)
 {
 	int i, j, *pivot;
 
-	pivot = array + right;
+	pivot = array + high;
 	for (i = j = low; j < high; j++)
 	{
 		if (array[j] < *pivot)
