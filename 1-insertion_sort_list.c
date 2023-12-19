@@ -6,10 +6,11 @@
  * @n1: pointer to the first node.
  * @n2: pointer to the second node.
  */
+
 void nodes_swap(listint_t *n1, listint_t *n2)
 {
 	if (n1->prev)
-		n1->prev->next = b;
+		n1->prev->next = n2;
 	if (n2->next)
 		n2->next->prev = n1;
 	n1->next = n2->next;
@@ -20,10 +21,11 @@ void nodes_swap(listint_t *n1, listint_t *n2)
 
 /**
  * insertion_sort_list - function that sorts a doubly linked list
- *		of integers in ascending order.
+ *              of integers in ascending order.
  *
  * @list: pointer to the head of a doubly-linked list.
  */
+
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *i, *j;
