@@ -20,13 +20,13 @@ void nodes_swap(listint_t *n1, listint_t *n2)
 }
 
 /**
- * jion_sort_list - function that sorts a doubly linked list
+ * insertion_sort_list - function that sorts a doubly linked list
  *		of integers in ascending order.
  *
  * @list: pointer to the head of a doubly-linked list.
  */
 
-void jion_sort_list(listint_t **list)
+void insertion_sort_list(listint_t **list);
 {
 	listint_t *i, *j, *tmp;
 
